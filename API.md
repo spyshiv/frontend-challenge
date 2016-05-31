@@ -1,6 +1,6 @@
 ### GET /api/web/country/list/
 
-** Response: **
+**Response:**
 ```
 {
   "countrylist": [
@@ -19,11 +19,11 @@
 
 ### GET /api/web/trends/<country>
 
-Respone: 
+**Respone:** 
 
 ex: country = India
 
-**NOTE:** value of parameter to this api is one of the country names from the above end point response
+**NOTE:** value of parameter to this api is one of the country names from the [above] end point response
 ```
 {
   "trends": [
