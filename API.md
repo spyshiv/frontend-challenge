@@ -23,7 +23,7 @@
 
 ex: country = India
 
-**NOTE:** value of parameter to this api is one of the country names from the [above] end point response
+**NOTE:** value of parameter to this api is one of the country names from the [above](https://github.com/Infratab/Twitter-Trends/blob/master/API.md#get-apiwebcountrylist) end point response
 ```
 {
   "trends": [
