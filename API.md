@@ -17,13 +17,13 @@
 }
 ```
 
-### GET /api/web/trends/<country>
+### GET /api/web/trends/{country}
 
 **Respone:** 
 
 ex: country = India
 
-**NOTE:** value of parameter to this api is one of the country names from the [above](https://github.com/Infratab/Twitter-Trends/blob/master/API.md#get-apiwebcountrylist) end point response
+**NOTE:** value of parameter to this api, is one of the country names from the [above](https://github.com/Infratab/Twitter-Trends/blob/master/API.md#get-apiwebcountrylist) end point response
 ```
 {
   "trends": [
