@@ -3,7 +3,7 @@
 **Response:**
 ```
 {
-  "countrylist": [
+  "countries": [
     "India",
     "Pakistan",
     "Singapore",
