@@ -1,4 +1,4 @@
-### GET /api/web/country/list/
+### GET /countries
 
 **Response:**
 ```
@@ -17,7 +17,7 @@
 }
 ```
 
-### GET /api/web/trends/{country}
+### GET countries/{country}/trends
 
 **Respone:** 
 
