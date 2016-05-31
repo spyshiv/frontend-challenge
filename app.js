@@ -136,7 +136,7 @@ var json={
 
 }
 
-app.get('/api/web/trends/:country', function(req,res){
+app.get('/countries/:country/trends/', function(req,res){
 	res.header('Access-Control-Allow-Origin', '*');
 	res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
 	res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
@@ -152,7 +152,6 @@ app.get('/api/web/trends/:country', function(req,res){
 			var trends=[];
 			for(var i=0;i<list.length;i++){
 				var obj={};
-				obj['events']=null;
 				obj['name']=list[i];
 				obj['url']="http://twitter.com/search/?q="+list[i];
 				trends.push(obj);
@@ -164,8 +163,8 @@ app.get('/api/web/trends/:country', function(req,res){
 	}
 	
 });
-app.get('/api/web/country/list/', function(req,res){
-	res.json({countrylist:["India","Pakistan","Singapore","SouthAfrica","UnitedKingdom","Canada","UnitedStates","Australia","NewZealand"]})
+app.get('/countries/', function(req,res){
+	res.json({countries:["India","Pakistan","Singapore","SouthAfrica","UnitedKingdom","Canada","UnitedStates","Australia","NewZealand"]})
 });
 
 
