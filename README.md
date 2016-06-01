@@ -1,4 +1,9 @@
-# Twitter-Trends
+# Infratab Frontend Coding Challenge!
+
+## Getting Started
+1. Participate
+2. Run the Server
+3. Complete the Challenge!
 
 
 #### Run the server
