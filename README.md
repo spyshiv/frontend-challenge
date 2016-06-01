@@ -21,8 +21,7 @@ We would like you to follow the Github flow to participate in the coding challen
 #### Downloading the project directory
 1. Download this project direactory as a compressed folder (`frontend-challenge.zip`)
 2. Complete the requirements listed in the [Challenge](#challenge)
-3. Compress the folder
-4. Email the compressed folder to careers@infratab.in or to the person with whom you have been interacting!
+3. Email the compressed folder to careers@infratab.in or to the person with whom you have been interacting!
 
 ### Setup the project
 1. Run npm install
