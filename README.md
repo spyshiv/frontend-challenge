@@ -9,6 +9,7 @@
 There are two ways to participate in our conding challenge -
 - [By cloning this repo and using the Github Flow]()
 - [By downloading the entire project directory as a compressed folder]()
+
 We would like you to follow the Github flow to participate in the coding challenge if you are familiar with Git and its ecosystem. However, in case you are not familiar with Git, please feel free to download the project directory and then complete the [Challenge]()
 
 #### Cloning the Repo (Use the Github flow)
