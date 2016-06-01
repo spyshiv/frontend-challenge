@@ -27,9 +27,9 @@ We would like you to follow the Github flow to participate in the coding challen
 ### Setup the project
 1. Run npm install
 2. Run `npm start` to run server
-
-Open `http://localhost:3001/` in browser, if you see `Here you go!` text in the browser that means server is successfully running. 
-Please find `index.html` in the `public` folder. Now you can start your coding!.
+3. Open `http://localhost:3001/` in browser, if you see `Here you go!` text in the browser that means server is successfully running
+4. Please find `index.html` in the `public` folder
+5. Now you can start your coding!
 
 ### Challenge
 
