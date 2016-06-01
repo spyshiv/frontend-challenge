@@ -1,9 +1,9 @@
 # Infratab Frontend Coding Challenge!
 
 ## Getting started
-1. Participate
-2. Setup the project
-3. Complete the Challenge!
+1. [Participate](#participate)
+2. [Setup the project](#setup-the-project)
+3. [Complete the Challenge!](#challenge)
 
 ### Participate
 There are two ways to participate in our conding challenge -
