@@ -32,6 +32,27 @@ We would like you to follow the Github flow to participate in the coding challen
 
 ### Challenge
 
-
-
 [Here](https://github.com/Infratab/Twitter-Trends/blob/master/API.md) are the list of api end points.
+
+Your challenge is to design a web page which shows trends percent contribution in the form of pie chart
+
+DOM:
+Checkout the DOM sample here: 
+
+Features:
+1. Two dropdowns for selecting countries.
+    You can select country either from anyone or both the dropdowns.If you select a single country,then you have to show trends for that country else if you select countries from both the dropdowns, then show common trends of those countries.
+
+2. The trends have to be displayed in the left sidebar below the country selection side bar
+
+6. Here comes the fun part: WEIGHT CALCULATION
+  - Calculate wieght of each trend as follows
+
+  	- Assign weights 1 - 26 to alphabets from A-Z
+  	- For all the special characters like #, $, -,... weight is 0
+  	- For all the digits, the "value" is the "weight" like for 1 its 1, for 2 its 2 and so on.
+  	- After assigning weights, calculate the weight of trend by adding wieghts of each character
+  
+  - Add the weight of all trends
+  - Calculat percentage contribution for each trend
+  - Display tis percentage contribution of all the trends in a piechart
