@@ -45,10 +45,10 @@ You have to write html, css for this web page. If you face any problems please c
 #### Features:
 
 ##### 1. Two dropdowns for selecting countries.
-You can select country either from anyone or both the dropdowns.If you select a single country,then you have to show trends for that country else if you select countries from both the dropdowns, then show common trends of those countries.
+ You can select country either from anyone or both the dropdowns.If you select a single country,then you have to show trends for that country else if you select countries from both the dropdowns, then show common trends of those countries.
 
 ##### 2. Show trends
-The trends have to be displayed in the bottom-lef of the page as shown in the image
+ The trends have to be displayed in the bottom-lef of the page as shown in the image
 
 ##### 3. Weight calculation
   - Calculate wieght of each trend as follows
