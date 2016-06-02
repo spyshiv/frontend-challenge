@@ -60,4 +60,6 @@ You have to write html, css for this web page. If you face any problems please c
   
   - Add the weight of all trends
   - Calculat percentage contribution for each trend
-  - Display this percentage contribution of all the trends in a piechart
+  
+##### 4. Show piechart
+  Display this percentage contribution of all the trends in a piechart as shown in image.on hover highlight that part of the chart.
