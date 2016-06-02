@@ -39,13 +39,18 @@ Your challenge is to design a web page which shows trends percent contribution i
 DOM:
 Checkout the DOM sample here: 
 
-Features:
-1. Two dropdowns for selecting countries.
+You have to write html, css for this web page. If you face any problems please contact us.
+
+
+#### Features:
+
+##### 1. Two dropdowns for selecting countries.
     You can select country either from anyone or both the dropdowns.If you select a single country,then you have to show trends for that country else if you select countries from both the dropdowns, then show common trends of those countries.
 
-2. The trends have to be displayed in the left sidebar below the country selection side bar
+##### 2. Show trends
+    The trends have to be displayed in the bottom-lef of the page as shown in the image
 
-6. Here comes the fun part: WEIGHT CALCULATION
+##### 3. Weight calculation
   - Calculate wieght of each trend as follows
 
   	- Assign weights 1 - 26 to alphabets from A-Z
@@ -55,4 +60,4 @@ Features:
   
   - Add the weight of all trends
   - Calculat percentage contribution for each trend
-  - Display tis percentage contribution of all the trends in a piechart
+  - Display this percentage contribution of all the trends in a piechart
