@@ -37,7 +37,8 @@ We would like you to follow the Github flow to participate in the coding challen
 Your challenge is to design a web page which shows trends percent contribution in the form of pie chart as shown below:
 You have to write html, css for this web page. If you face any problems please contact us.
 
-// [Add image here]
+![assignment-3](https://cloud.githubusercontent.com/assets/12729226/15755112/fd0970b4-2918-11e6-896c-87f467ebf3c6.png)
+
 
 
 #### Features:
