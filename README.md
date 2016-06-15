@@ -6,7 +6,7 @@
 3. [Complete the Challenge!](#challenge)
 
 ### Participate
-There are two ways to participate in our conding challenge -
+There are two ways to participate in our coding challenge -
 - [By cloning this repo and using the Github Flow](#cloning-the-repo-use-the-github-flow)
 - [By downloading the entire project directory as a compressed folder](#downloading-the-project-directory)
 
