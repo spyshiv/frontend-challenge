@@ -32,22 +32,19 @@ We would like you to follow the Github flow to participate in the coding challen
 
 ### Challenge
 
-[Here](https://github.com/Infratab/Twitter-Trends/blob/master/API.md) are the list of api end points necessary for this challenge.
+For this challenge, we provide you a server which provides you with the [following api endpoints](https://github.com/Infratab/Twitter-Trends/blob/master/API.md). Our server provides trends of different countries from Twitter at some point of time. 
 
-Your challenge is to design a web page which shows trends percent contribution in the form of pie chart as shown below:
-You have to write html, css for this web page. If you face any problems please contact us.
+Your challenge is to implement the following design and fulfil the functional requirements listed [below](https://github.com/Infratab/frontend-challenge#functional-requirements). You can implement the design using any library/frameworks you like or just good old plain html/css.
 
 ![assignment-3](https://cloud.githubusercontent.com/assets/12729226/15755112/fd0970b4-2918-11e6-896c-87f467ebf3c6.png)
 
+#### Functional Requirements:
 
+##### 1. Select countries
+The two dropdowns in the **Select countries** section provide a list of countries for the user to choose from. This list of countries is provided by [**GET /countries**](https://github.com/Infratab/frontend-challenge/blob/master/API.md#get-countries).
 
-#### Features:
-
-##### 1. Two dropdowns for selecting countries.
-   Make [this](https://github.com/Infratab/frontend-challenge/blob/master/API.md#get-countries) API call to get the list of countries to show them in dropdown.
-
-##### 2. Show trends
-   Make [this](https://github.com/Infratab/frontend-challenge/blob/master/API.md#get-countriescountrytrends) API call to get the list of trends of selected country.
+##### 2. Common trends
+When two countries are selected by the user, the trends common to both the countries are shown in the **Common trends** section. If only one country is selected, all the trends of that country are showin in the **Common trends** section. This list of trends for a particular country is provided by [**GET /countries/{country}/trends**](https://github.com/Infratab/frontend-challenge/blob/master/API.md#get-countriescountrytrends).
  
  **Interactions**
  
