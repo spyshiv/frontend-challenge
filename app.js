@@ -153,7 +153,7 @@ app.get('/countries/:country/trends/', function(req,res){
 			for(var i=0;i<list.length;i++){
 				var obj={};
 				obj['name']=list[i];
-				obj['url']="http://twitter.com/search/?q="+list[i];
+				obj['url']="http://twitter.com/search?q="+list[i];
 				trends.push(obj);
 			}
 			res.json({trends:trends});
