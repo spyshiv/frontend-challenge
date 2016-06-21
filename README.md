@@ -46,22 +46,13 @@ The two dropdowns in the **Select countries** section provide a list of countrie
 ##### 2. Common trends
 When two countries are selected by the user, the trends common to both the countries are shown in the **Common trends** section. If only one country is selected, all the trends of that country are showin in the **Common trends** section. This list of trends for a particular country is provided by [**GET /countries/{country}/trends**](https://github.com/Infratab/frontend-challenge/blob/master/API.md#get-countriescountrytrends).
  
- **Interactions**
- 
-   You can select country either from anyone or both the dropdowns.If you select a single country,then you have to show trends for that country else if you select countries from both the dropdowns, then show common trends of those countries.
- 
- The trends have to be displayed in the bottom-lef of the page as shown in the image
+##### 3. Trend weights contribution
+A pie chart is drawn based on a few computations from the list of **Common trends**. The computations that need to be implemented are as follows -
+ 1. **Trend weight* is the number of characters in each of the trends i.e. the length of each "trend" string.
+    For example, the **Trend weight** of "#thecrosspolo" is 13 which is the length of the "trend" string.
+ 2. Calculate the "Total trend weight" by summation of all the **Trend weights** in the list of **Common trends**.
+    For example, the "Total trend weight" in the image provided above is 24.
+ 3. Calculate the **Trend weight contribution** contribution of each trend in the list of **Common trends** to the "Total trend weight" by using the following formula: [(**Trend weight**/"Total trend weight") x 100]
+    For example, the **Trend weight contribution** of "#thecrosspolo" from the image above is [(13/24)x100] = 54.16%
 
-##### 3. Weight calculation
-  - Calculate wieght of each trend as follows
-
-  	- Assign weights 1 - 26 to alphabets from A-Z
-  	- For all the special characters like #, $, -,... weight is 0
-  	- For all the digits, the "value" is the "weight" like for 1 its 1, for 2 its 2 and so on.
-  	- After assigning weights, calculate the weight of trend by adding wieghts of each character
-  
-  - Add the weight of all trends
-  - Calculat percentage contribution for each trend
-  
-##### 4. Show piechart
-  Display this percentage contribution of all the trends in a piechart as shown in image.on hover highlight that part of the chart.
+Please feel free to use any open source library as you wish. 
