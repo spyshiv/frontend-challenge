@@ -48,11 +48,14 @@ When two countries are selected by the user, the trends common to both the count
  
 ##### 3. Trend weights contribution
 A pie chart is drawn based on a few computations from the list of **Common trends**. The computations that need to be implemented are as follows -
- 1. **Trend weight* is the number of characters in each of the trends i.e. the length of each "trend" string.
+ 1. **Trend weight** is the number of characters in each of the trends i.e. the length of each "trend" string.
+    
     For example, the **Trend weight** of "#thecrosspolo" is 13 which is the length of the "trend" string.
  2. Calculate the "Total trend weight" by summation of all the **Trend weights** in the list of **Common trends**.
+    
     For example, the "Total trend weight" in the image provided above is 24.
  3. Calculate the **Trend weight contribution** contribution of each trend in the list of **Common trends** to the "Total trend weight" by using the following formula: [(**Trend weight**/"Total trend weight") x 100]
+    
     For example, the **Trend weight contribution** of "#thecrosspolo" from the image above is [(13/24)x100] = 54.2%
 
 Please feel free to use any open source library as you wish. 
