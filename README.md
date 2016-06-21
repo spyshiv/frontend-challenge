@@ -36,7 +36,7 @@ For this challenge, we provide you a server which provides you with the [followi
 
 Your challenge is to implement the following design and fulfil the functional requirements listed [below](https://github.com/Infratab/frontend-challenge#functional-requirements). You can implement the design using any library/frameworks you like or just good old plain html/css.
 
-![assignment-3](https://cloud.githubusercontent.com/assets/12729226/15755112/fd0970b4-2918-11e6-896c-87f467ebf3c6.png)
+![fronted_assignment](https://cloud.githubusercontent.com/assets/12729226/16240647/ccdc47d8-3807-11e6-9301-2c89457c3327.png)
 
 #### Functional Requirements:
 
