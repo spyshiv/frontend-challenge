@@ -89,6 +89,7 @@ app.controller('TrendCtrl', ['$scope', '$http', function ($scope, $http) {
 		
 		d3.select("svg").remove();
 		$scope.colors = [];
+		formatPercent = d3.format(",.1%");
 		var width = 450,
 		    height = 300,
 		    radius = Math.min(width, height) / 2;
@@ -123,16 +124,23 @@ app.controller('TrendCtrl', ['$scope', '$http', function ($scope, $http) {
 	  	g.append("text")
 	      	.attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")"; })
 	      	.attr("dy", ".35em")
-	      	.text(function(d) { return d.data.trendlength; });
+	      	.text(function(d) { return formatPercent((d.data.trendlength)/100);});
 
 		function type(d) {
 		  	d.trendlength = +d.trendlength;
 		  	return d;
 		}
-
+		
+		$scope.mergeColors();
 
 	}
 
-	
+	$scope.mergeColors = function() {
+		$scope.trendswithcolor = $scope.piedata;
+		colors = $scope.colors;
+		for(i=0; i<colors.length; i++) {
+			$scope.trendswithcolor[i].color = colors[i];
+		}
+	}
 
 }]);
