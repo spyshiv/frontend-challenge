@@ -1,6 +1,6 @@
 var app = angular.module("TrendApp", []);
 
-app.controller('TrendCtrl',['$scope', '$http',function ($scope, $http) {
+app.controller('TrendCtrl', ['$scope', '$http', function ($scope, $http) {
 
 	$http({
         method : "GET",
@@ -11,14 +11,59 @@ app.controller('TrendCtrl',['$scope', '$http',function ($scope, $http) {
 
     }, function trendError(response) {
         
-        console.log("Something went wrong!");
+        console.log("Could not get country list!");
+    
     });
 
-    $scope.FirstCountry = function(countryname){
-    	console.log(countryname);
-    }
-    $scope.SecondCountry = function(countryname){
-    	console.log(countryname);
+    $scope.FirstCountry = function(countryname) {
+    	
+    	$http({
+	        method : "GET",
+	        url : "countries/" + countryname + "/trends/"
+	    }).then(function trendSuccess(response) {
+	    	
+	    	$scope.firstctrends = response.data.trends;
+	    	$scope.commontrends = $scope.firstctrends;
+	    	$scope.commonTrends();
+
+	    }, function trendError(response) {
+	        console.log("Could not get trends of first country!");
+	    });
     }
 
+    $scope.SecondCountry = function(countryname) {
+    	
+    	$http({
+	        method : "GET",
+	        url : "countries/" + countryname + "/trends/"
+	    }).then(function trendSuccess(response) {
+	    	
+	    	$scope.secondctrends = response.data.trends;
+	    	$scope.commontrends = $scope.secondctrends;
+	    	$scope.commonTrends();
+
+	    }, function trendError(response) {
+	        console.log("Could not get trends of second country!");
+	    });
+
+
+    }
+
+    $scope.commonTrends = function() {
+		if($scope.firstctrends && $scope.secondctrends) {
+			$scope.commontrends = $scope.getIntersection($scope.firstctrends, $scope.secondctrends);
+		}
+    }
+
+    $scope.getIntersection = function(firstctrends, secondctrends) {
+	    commontrends = [];
+	    angular.forEach(firstctrends, function(object1, index1) {
+	        angular.forEach(secondctrends, function(object2, index2) {
+	            if(object1.name == object2.name){
+	                commontrends.push(object2);
+	            }
+			})
+		})
+		return commontrends;
+	}
 }]);

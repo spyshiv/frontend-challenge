@@ -44,7 +44,9 @@
 						<p>Common trends</p>
 					</div>
 					<div class="common-trends">
-						
+						<a ng-repeat="trend in commontrends" href="{{trend.url}}" target="_blank">
+							<li>{{trend.name}}</li>
+						</a>
 					</div>
 				</div>
 			</div>
