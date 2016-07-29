@@ -9,7 +9,8 @@
         <!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="static/css/style.css">
-		
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
 		<script src="https://d3js.org/d3.v3.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
 		<script src="static/js/controller.js"></script>		
@@ -19,23 +20,22 @@
 <body ng-controller="TrendCtrl">
 	<div class="container-fluid">
 		<div class="row">
-			
-			<div class="col-md-4">
+			<div class="col col-md-3 left-container">
 				<div class="country-panel">
 					<div class="country-panel-title">
-						<p>Select Country</p>
+						<p>Select Countries</p>
 					</div>
 					<div class="country-dropdowns">
 						<div class="first-drop">
-							<span help-text>Select Country</span><br>
+							<span class="help-text">Select Country</span><br>
 							<span class="glyphicon glyphicon-globe"></span>
-							<select ng-model="firstcountry" ng-options="country as country for country in countries" ng-change="FirstCountry(firstcountry)">
+							<select class="dropdown-single" ng-model="firstcountry" ng-options="country as country for country in countries" ng-change="FirstCountry(firstcountry)">
 							</select>
 						</div>
 						<div class="second-drop">
 							<span class="help-text">Select Country</span><br>
 							<span class="glyphicon glyphicon-globe"></span>
-							<select ng-model="secondcountry" ng-options="country as country for country in countries" ng-change="SecondCountry(secondcountry)"></select>
+							<select class="dropdown-single" ng-model="secondcountry" ng-options="country as country for country in countries" ng-change="SecondCountry(secondcountry)"></select>
 						</div>
 					</div>
 				</div>
@@ -46,30 +46,34 @@
 					</div>
 					<div class="common-trends">
 						<a ng-repeat="trend in commontrends" href="{{trend.url}}" target="_blank">
-							<li>{{trend.name}}</li>
+							<p class="trend-name">{{trend.name}}</p>
 						</a>
 					</div>
 				</div>
 			</div>
 
-			<div class="col-md-8">
+			<div class="col col-md-9 right-container">
 				<div class="graph-panel">
 					<div class="graph-panel-title">
-						<p></p>
+						<p>Trend weights contribution</p>
 					</div>
 					<div class="graph-container">
 						<div class="row">
-							<div class="col-md-8">
-								<div class="pi-chart">
-									<div id="pie-chart"></div>
+							<div class="col col-md-8">
+								<div class="pie-chart-container">
+									<div class="pie-chart-panel">
+										<div id="pie-chart"></div>
+									</div>
 								</div>
 							</div>
-							<div class="col-md-4">
-								<div class="trends-with-color">
-									<div class="commontrend" ng-repeat="trend in trendswithcolor">
-										<div class="circle-color" ng-style="{'width': '20px','float':'left', 'height': '20px','background-color': trend.color}">
+							<div class="col col-md-4">
+								<div class="trends-color-panel">
+									<div class="trends-with-color">
+										<div class="commontrend" ng-repeat="trend in trendswithcolor">
+											<div class="circle-color" ng-style="{'background-color': trend.color}">
+											</div>
+											<p class="trend-name-single">{{trend.trendname}}</p>
 										</div>
-										<p>{{trend.trendname}}</p>
 									</div>
 								</div>
 							</div>

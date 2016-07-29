@@ -121,7 +121,6 @@ app.controller('TrendCtrl', ['$scope', '$http', function ($scope, $http) {
 		svg.attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
 		var color = d3.scale.category10();
-		console.log(color);
 
 		var key = function(d){ return formatPercent(d.data.trendlength); };
   

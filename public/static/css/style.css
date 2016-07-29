@@ -1,3 +1,158 @@
+/*------------------------main page------------------------------*/
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
+.row {
+  margin-left: initial;
+  margin-right: initial;
+}
+
+.col {
+  padding: 0;
+  margin: 0;
+}
+
+/*---------Left container-----------*/
+
+.left-container {
+  background-color: #F3F0F0;
+}
+
+.country-panel {
+}
+
+.country-panel .country-panel-title {
+  background-color: #D35400;
+  text-align: center;
+}
+
+.country-panel .country-panel-title p {
+  color: #fff;
+  font-size: 22px;
+  padding: 5px 12px;
+}
+
+.country-panel .country-dropdowns {
+  padding: 20px 10px 30px 20px;
+ 
+}
+
+.country-dropdowns .help-text {
+  color: #31C6DA;
+  font-size: 12px;
+  padding-left: 30px;
+}
+
+.glyphicon.glyphicon-globe {
+  color: #31C6DA;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.dropdown-single {
+  background-color: #F3F0F0;
+  border: 0;
+  border-bottom: 2px solid #31C6DA;
+  font-size: 20px;
+  outline: 0;
+  width: 80%;
+}
+
+.country-dropdowns .second-drop {
+  padding-top: 30px;
+
+}
+
+.trend-panel .trend-panel-title {
+  background-color: #D35400;
+  text-align: center;
+}
+
+.trend-panel .trend-panel-title p {
+  color: #fff;
+  font-size: 22px;
+  padding: 5px 12px;
+}
+
+.trend-panel .common-trends {
+  padding: 20px 10px 30px 20px;
+}
+
+.trend-name {
+  padding:0px 10px 10px 10px; 
+  font-size: 18px;
+}
+
+/*---------Right container-----------*/
+.graph-panel .graph-panel-title {
+  text-align: center;
+}
+
+.graph-panel .graph-panel-title p {
+  color: #34495E;
+  font-size: 24px;
+  padding: 20px;
+}
+
+.pie-chart-container {
+  min-height: 500px;
+  position: relative;
+  width: 100%;
+}
+
+.pie-chart-panel {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.trends-color-panel {
+  min-height: 500px;
+  position: relative;
+  width: 100%;
+}
+.trends-with-color {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+}
+
+.trends-with-color .commontrend {
+  padding-top: 20px;
+}
+
+.trends-with-color .commontrend .circle-color {
+  border-radius: 50px;
+  float: left;
+  height: 25px;
+  padding-top: 20px;
+  margin-right: 10px;
+  width: 25px;
+}
+
+.trends-with-color .commontrend .trend-name-single {
+  color: #34495E;
+  font-size: 16px;
+}
+ 
+/*------------------------Graph css------------------------------*/
 #pie-chart {
   width: 400px;
   height: 300px;
